@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView 
+                android:id="@+id/textview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:text="Load TABLE_A Data!" />
+            <TextView 
+                android:id="@+id/textview2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                android:text="Load TABLE_B Data!" />
+    	</FrameLayout>
+    </LinearLayout><LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom">
+        <Button android:text="Reload DB" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+        <Button android:text="Add (A)" android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+        <Button android:text="Add (B)" android:id="@+id/Button03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+        <Button android:text="Clear DB" android:id="@+id/Button04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+        <Button android:text="Search" android:id="@+id/Button05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+        <Button android:text="Update (B)" android:id="@+id/Button06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="12px"/>
+    </LinearLayout>
+    
+</TabHost>
